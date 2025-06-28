@@ -1,6 +1,6 @@
 {
     "jsc": {
-        "target": "es2017",
+        "target": "es2022",
         "parser": {
             "syntax": "typescript",
             "decorators": true,
@@ -18,10 +18,5 @@
         "type": "nodenext"
     },
     "sourceMaps": true,
-    "exclude": [
-        ".*\\.spec.tsx?$",
-        ".*\\.test.tsx?$",
-        ".*\\.vite.tsx?$",
-        ".*.js$"
-    ]
+    "exclude": [".*\\.spec.tsx?$", ".*\\.test.tsx?$", ".*\\.vite.tsx?$", ".*.js$"]
 }

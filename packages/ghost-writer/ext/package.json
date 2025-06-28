@@ -1,5 +1,5 @@
 {
-    "name": "@fux/ghost-writer-ext",
+    "name": "ghost-writer",
     "displayName": "Ghost Writer",
     "description": "Dynamically generate frequently used code.",
     "publisher": "NewRealityDesigns",
