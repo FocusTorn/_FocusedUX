@@ -4,18 +4,19 @@
     "sourceRoot": "packages/ghost-writer/core/src",
     "projectType": "library",
     "targets": {
-        
         "build": {
             "executor": "@nx/js:swc",
             "outputs": ["{options.outputPath}"],
             "options": {
-                "outputPath": "dist/packages/ghost-writer/core",
+                "outputPath": "packages/ghost-writer/core/dist",
                 "main": "packages/ghost-writer/core/src/index.ts",
                 "tsConfig": "packages/ghost-writer/core/tsconfig.lib.json",
-                "assets": []
+                "stripLeadingPaths": true,
+                "assets": [],
+                "clean": true
             }
         },
-        
+
         // "build": {
         //     "executor": "nx:run-commands",
         //     "outputs": ["{options.outputPath}"],
@@ -53,7 +54,7 @@
         //         "clean": false
         //     }
         // },
-        
+
         "lint": {}
     }
 }

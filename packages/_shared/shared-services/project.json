@@ -8,12 +8,12 @@
             "executor": "@nx/js:swc",
             "outputs": ["{options.outputPath}"],
             "options": {
-                "outputPath": "dist/packages/_shared/shared-services",
+                "outputPath": "packages/_shared/shared-services/dist",
                 "main": "packages/_shared/shared-services/src/index.ts",
                 "tsConfig": "packages/_shared/shared-services/tsconfig.lib.json",
+                "stripLeadingPaths": true,
                 "assets": [],
                 "clean": true
-                
             }
         },
         "typecheck": {

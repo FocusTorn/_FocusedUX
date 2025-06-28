@@ -29,6 +29,11 @@
             "cache": true,
             "dependsOn": ["^build"],
             "inputs": ["production", "^production"]
+        },
+        "@nx/esbuild:esbuild": {
+            "cache": true,
+            "dependsOn": ["^build"],
+            "inputs": ["production", "^production"]
         }
     },
     "plugins": [
@@ -37,6 +42,10 @@
             "options": {
                 "typecheck": {
                     "targetName": "typecheck"
+                },
+                "build": {
+                    "targetName": "build",
+                    "configName": "tsconfig.lib.json"
                 }
             }
         },
